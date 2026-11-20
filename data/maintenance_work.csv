@@ -1,0 +1,6 @@
+request,tick,verb,hour,target
+M01,101,compact,2026-11-18T09:00:00Z,initial
+M02,106,compact,2026-11-18T09:00:00Z,current
+M03,111,inventory,,current
+M04,132,collect,,current
+M05,146,collect,,current

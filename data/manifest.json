@@ -1,0 +1,60 @@
+{
+  "pack": "lake-maintenance",
+  "tables": {
+    "source_files": {
+      "columns": [
+        "wave",
+        "file_id",
+        "record_id",
+        "rev",
+        "hour",
+        "at",
+        "meter",
+        "watts"
+      ],
+      "rows": 8,
+      "sha256": "0bc270338cbcb623b25df0567efc8a93e0501b211166936889e5b49532ea4528"
+    },
+    "retractions": {
+      "columns": [
+        "wave",
+        "retraction_id",
+        "record_id",
+        "rev"
+      ],
+      "rows": 3,
+      "sha256": "29a2601c8bf13894ce51b9bf90256c2a1aa56b0ece3e15a754884445d1d87f9b"
+    },
+    "maintenance_work": {
+      "columns": [
+        "request",
+        "tick",
+        "verb",
+        "hour",
+        "target"
+      ],
+      "rows": 5,
+      "sha256": "d3c09ed6d9bd93d42bc6dd9bc1f224d495face7d7d182184cd8713805c86f810"
+    },
+    "reader_requests": {
+      "columns": [
+        "request",
+        "tick",
+        "verb",
+        "target",
+        "ttl",
+        "max_rows"
+      ],
+      "rows": 7,
+      "sha256": "3171f2d94738e5cc204238f3dba127da83ce904f74de3288460c6d95074482ec"
+    }
+  },
+  "references": [
+    [
+      "retractions",
+      "record_id",
+      "source_files",
+      "record_id"
+    ]
+  ]
+}

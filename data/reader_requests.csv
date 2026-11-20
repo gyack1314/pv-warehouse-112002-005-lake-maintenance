@@ -1,0 +1,8 @@
+request,tick,verb,target,ttl,max_rows
+R01,100,open,initial,25,1
+R02,102,protect,initial,,
+R03,118,renew,R01,22,
+R04,130,resume,R01,,2
+R05,133,unprotect,initial,,
+R06,140,resume,R01,,2
+R07,142,open,current,10,3
